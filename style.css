@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'SplineSansMono-Bold';
+    src: url('./fonts/SplineSansMono-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'SplineSansMono-Medium';
+    src: url('./fonts/SplineSansMono-Medium.woff') format('woff');
+}
+
+
+:root{
+    --black: #131311;
+    --white: #F7F8EF;
+    --yellow: yellow;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, p, a, li{
+    font-family: 'SplineSansMono-Medium', serif;
+    color: var(--white);
+    font-size: 1rem;
+}
+.middle{
+    margin: auto;
+}
+.margin-auto{
+    margin: auto;
+}
+.w-80{
+    width: min(90vw, 700px)
+}
+.sz-6{
+    font-size: 4rem;
+}
+.padding-small{
+    padding: .1rem 0;
+    margin: 0;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.default-list{
+    list-style-type: none;
+}
+body{
+    background-color: var(--black);
+}
+ul{
+    margin: 0;
+    padding: 0 0rem 0rem .3rem;
+}
+ul > li {
+    list-style: none;
+}
+body{
+    height: clamp(670px, 100vh, 2200px);
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+        "header header"
+        "empty empty"
+        "name name"
+        "name name"
+        "info info"
+        "flow flow"
+        "footer footer"
+    ;
+}
+.g-header {
+    grid-area: header;
+}
+.g-name {
+    grid-area: name;
+}
+.g-flow {
+    grid-area: flow;
+}
+.g-info {
+    grid-area: info;
+}
+.g-footer {
+    grid-area: footer;
+}
+
+.p-1-btm {
+    padding-bottom: 1.6rem;
+}
+
+.jus-con-sp-btwn{
+    justify-content: space-between;
+}
+.just-con-end{
+    justify-content: end;
+}
+
+.banner{
+    width: 100vw;
+    position: relative;
+    left: 0;
+    background-color: var(--white);
+    color: var(--black)
+}
+
+.black{
+    color: var(--black)
+
+
+}
+
+.flow-section{
+    width: 100%;
+    background: rgb(129, 129, 129);
+    height: 4rem;
+    color: var(--black);
+}
+
+.btn{
+    all: unset;
+    border-radius: 20px;
+    border: 3px solid var(--yellow);
+    padding: .5rem 3rem;
+    color: var(--white);
+    cursor: pointer;
+    transition: .7s;
+}
+
+.btn:hover{
+    background-color: var(--white);
+    border: 3px solid var(--white);
+    color: var(--black);
+}
+.bold{
+    font-family: "SplineSansMono-Bold", monospace;
+}
+
+.text-container {
+    white-space: nowrap;
+}
+.svg-wrapper{
+    position: absolute;
+    left: 200px;
+    z-index: -80;
+    
+}
+.ovf-n{
+    overflow: hidden;
+}
+body > 
+
+#info{
+
+}
+
+#hi{
+    font-size: 4rem;
+    font-family: "SplineSansMono-Bold", monospace;
+}
+
+
+/* ALLGEMEIN */
+
+::selection{
+    background: var(--yellow);
+    color: var(--black)
+}
+.p-t-b-1{
+    padding-bottom: .15rem;
+    padding-top: .15rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .7s;
+    gap: .31rem;
+}
+.p-t-b-1 > img {
+    height: 1rem;
+    fill: white;
+    border: white;
+    transition: .7s;
+}
+svg {
+    fill: red;
+}
+.p-t-b-1:hover > img{
+    transform: rotate(360deg);
+    
+}
+.p-t-b-1:hover{
+    gap: 1rem;
+}
+.hover-effect >a:hover{
+    color: var(--yellow)
+}
+
+/*
+    START
+*/
+.tag-list{
+    background: yellow;
+}
+.scroller{
+    max-width: 400px;
+}
+.scroller_inner{
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+/*
+    STOP
+*/
+.relative{
+    position: relative;
+}
+
+.center-middle{
+    justify-content: center;
+}
+
+.absolute{
+    position: absolute;
+    position: 10;
+}
+#demo{
+    position: absolute;
+    top: -20rem;
+    left: -30;
+    overflow: hidden;
+
+}
+#demo > svg{
+
+    overflow: hidden;
+
+}
+
+span {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+h1{
+    letter-spacing: -15px; /* Adjust the value as needed */
+}
