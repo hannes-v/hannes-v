@@ -64,6 +64,10 @@ body{
 
 }
 .grid {
+    background-image: url( './img/vector.svg' );
+    background-repeat: no-repeat;
+    background-size: 320px 320px;
+    background-position: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -158,9 +162,7 @@ body{
 }
 body > 
 
-#info{
 
-}
 
 #hi{
     font-size: 4rem;
@@ -250,6 +252,7 @@ span {
     margin: 0;
     padding: 0;
     gap: 0;
+    display: inline-block;
 }
 
 h1{

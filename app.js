@@ -1,3 +1,4 @@
+/*
 const rando = (a, e) => {
     let randInt = Math.floor(Math.random() * (e - a));
     return a + randInt;
@@ -131,6 +132,40 @@ function addAnimation() {
     scroller.setAttribute("data-animated", true)
   }))
 }
+
+
+
+*/
+
+var tl = anime.timeline({
+  easing: 'easeOutExpo',
+  duration: 700
+});
+
+tl.add({
+  targets: '.animate_title',
+  easing: 'easeInOutCubic',
+  rotate: [20, 0],
+  scale: [0, 1],
+  delay: anime.stagger(100, {start: 500}) // delay starts at 500ms then increase by 100ms for each elements.
+})
+.add({
+  targets: '.animate_flow',
+  translateX: [-200, 0],
+})
+.add({
+  targets: '.animate_wrapper span',
+  scale: [0,1],
+  delay: anime.stagger(100, {start: 500}) // delay starts at 500ms then increase by 100ms for each elements.
+})
+.add({
+  targets: '.animate_section_1',
+  scale: [0,1],
+})
+.add({
+  targets: '.animate_section',
+  scale: [0,1],
+})
 
 
 
